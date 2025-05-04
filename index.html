@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chúc Mừng Sinh Nhật Sin!</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;600&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="gift-box">
+      <div class="gift-lid"></div>
+      <img src="images/1.jpg" class="gift-img" alt="Sin's Gift" />
+      <button class="open-gift-btn" onclick="openGift()">OPEN!</button>
+    </div>
+    <div class="loading" style="display: none">
+      <img
+        src="https://cdn-icons-png.flaticon.com/512/2107/2107957.png"
+        class="loading-heart"
+        alt="Loading Heart"
+      />
+      <div class="slider-bar">
+        <div class="slider-progress"></div>
+      </div>
+    </div>
+    <div class="container" style="display: none">
+      <div class="image-frame"></div>
+      <div class="wish-frame">
+        <div class="container-sparkles">
+          <div class="container-sparkle"></div>
+          <div class="container-sparkle"></div>
+          <div class="container-sparkle"></div>
+          <div class="container-sparkle"></div>
+        </div>
+        <h1 class="shake"></h1>
+        <h2 id="name">Dear, Sin🌻</h2>
+        <p class="blink-text">Chúc em sinh nhật vui vẻ nhó công chúa!💖</p>
+        <h1 class="final-wish" style="display: none">Yêu em!</h1>
+      </div>
+      <button class="next-wish-btn" onclick="nextWish()">Next</button>
+    </div>
+    <canvas id="confetti-canvas"></canvas>
+    <div class="falling-stars">
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+      <div class="star"></div>
+    </div>
+    <div class="balloons">
+      <img
+        src="https://img.icons8.com/fluency/48/000000/heart-balloon.png"
+        class="balloon"
+        alt="Balloon 1"
+      />
+      <img
+        src="https://img.icons8.com/fluency/48/000000/heart-balloon.png"
+        class="balloon"
+        alt="Balloon 2"
+      />
+      <img
+        src="https://img.icons8.com/fluency/48/000000/heart-balloon.png"
+        class="balloon"
+        alt="Balloon 3"
+      />
+    </div>
+    <div class="sparkles">
+      <div class="sparkle"></div>
+      <div class="sparkle"></div>
+      <div class="sparkle"></div>
+      <div class="sparkle"></div>
+    </div>
+    <div class="hearts">
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+      (function () {
+        function c() {
+          var b = a.contentDocument || a.contentWindow.document;
+          if (b) {
+            var d = b.createElement("script");
+            d.innerHTML =
+              "window.__CF$cv$params={r:'93a56c6eba527b9c',t:'MTc0NjMzNDcxMi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
+            b.getElementsByTagName("head")[0].appendChild(d);
+          }
+        }
+        if (document.body) {
+          var a = document.createElement("iframe");
+          a.height = 1;
+          a.width = 1;
+          a.style.position = "absolute";
+          a.style.top = 0;
+          a.style.left = 0;
+          a.style.border = "none";
+          a.style.visibility = "hidden";
+          document.body.appendChild(a);
+          if ("loading" !== document.readyState) c();
+          else if (window.addEventListener)
+            document.addEventListener("DOMContentLoaded", c);
+          else {
+            var e = document.onreadystatechange || function () {};
+            document.onreadystatechange = function (b) {
+              e(b);
+              "loading" !== document.readyState &&
+                ((document.onreadystatechange = e), c());
+            };
+          }
+        }
+      })();
+    </script>
+  </body>
+</html>
